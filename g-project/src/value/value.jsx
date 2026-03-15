@@ -6,7 +6,7 @@ export default function Value() {
     let data=collection.slice(0,2).map((val,id)=>{
         return(
            <div className="ma" style={{margin:"30px 0px", width:"290px", padding:'0px', flexDirection:"right" ,gap:"2rem"}}>
-            <h4>{val.name}</h4>
+            <h2>{val.name}</h2>
             <div className="same" style={{  display:"flex", alignItems:"center", justifyContent:"center", margin:"20px", gap:"1rem", border:"none"}}>
                 <span>{val.title}</span>
                 <span className="a" style={{ display:"flex",alignItems:"center",justifyContent:"center", padding:"7px", margin:"5px", borderRadius:"50%",  color:"white"}}>{val.logo}</span>
@@ -17,7 +17,7 @@ export default function Value() {
      let data2=collection.slice(2).map((val,id)=>{
         return(
            <div className="ma" style={{margin:"30px 0px", width:"290px", padding:'0px', flexDirection:"right"}}>
-            <h4>{val.name}</h4>
+            <h2>{val.name}</h2>
             <div className="same" style={{display:"flex", alignItems:"center", justifyContent:"center",margin:"20px"}}>
                 <span>{val.title}</span>
                 <span className="a" style={{ display:"flex",alignItems:"center",justifyContent:"center", padding:"7px", margin:"5px" , borderRadius:"50%"} }>{val.logo}</span>
