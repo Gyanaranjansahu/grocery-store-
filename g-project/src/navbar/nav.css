@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+width: 100%;
+height: 10vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px auto;
+position: sticky;
+top: 0;
+
+}
+nav{
+   width: 1400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+   position: sticky;
+top: 0;
+    padding: 0px 4px;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(20px);
+    background-color: white;
+}
+#logo{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: x-large;
+font-weight:bold ;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.main ul li a{
+    text-decoration: none;
+    display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: black;
+
+}
+ul li a:hover{
+    color: orangered;
+   
+}
+ul{
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+}
+.search{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 6px;
+border-radius: 20px;
+text-align: center;
+border: none;
+cursor: pointer;
+    border: 2px solid orange;
+}
+.search:hover{
+    
+    border: 2px solid orangered;
+}
+.search input{
+    border: none;
+    outline: none;
+}
+.icons{
+    
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: large;
+}
+.third{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+#s{
+
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(100deg,red,orange);
+    font-size: large;
+    font-weight: bold;
+    border: none;
+}
+#humberger{
+display: none;
+}
+@media (max-width:670px) {
+    #humberger{
+display: block;
+font-size: x-large;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+ul{
+    position: absolute;
+    top: 60px;
+    right: -90px;
+     display: none;
+     animation: change 0.5s linear 0s backwards ;
+     gap: 2rem;
+     padding: 10px;
+     width: 110%;
+     background: linear-gradient(100deg ,orange,red);
+     -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(2rem);
+     background: linear-gradient(100deg,rgb(236, 233, 233));
+     
+      backdrop-filter: blur(10px);
+     border: none;
+     color: white;
+    /* background: linear-gradient(100deg,gray); */
+    outline: none;
+    z-index: 100;
+     -webkit-backdrop-filter: blur(2rem);
+  
+}
+li a{
+    color: white;
+    font-size: 1rem;
+}
+.multiple{
+    display: none;
+}
+.search{
+    width: 140px;
+    font-size:xx-small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search:hover{
+    font-size: larger;
+}
+.search>input{ 
+     width: 100px;
+    font-size: xx-small;
+    background: transparent;
+}
+#s{
+    font-size: x-small;
+}
+li{
+    margin: 5px;
+    padding: 10px;
+
+}
+@keyframes change {
+    0%{
+        right: -500px;
+    }
+    100%{
+        right: 10px;
+    }
+}
+header{
+   
+    -webkit-backdrop-filter: blur(200px);
+   backdrop-filter: blur(300px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+background-color: white-;
+ box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+ width: 100%;
+}
+nav{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    padding: 0px 4px;
+}
+.multiple{
+    display: block;
+    position: relative;
+    right: -280px;
+    top: -20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.block{
+    display: block;
+    right:-13px;
+}
+.shadow{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+}
