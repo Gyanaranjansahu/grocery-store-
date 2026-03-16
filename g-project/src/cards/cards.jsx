@@ -16,7 +16,7 @@ export default function Cards({ value }) {
                 }}>
                     <span style={{
                          display: "flex", alignItems: "center", justifyContent: "center", padding: "4px", cursor: "pointer",
-                    }} onClick={() => setChange(!change)}    className={change ? "effect":""}><FaHeart /></span>
+                    }} onClick={() => setChange(!change)}    className={change ? "effect":"remove"}><FaHeart /></span>
                     <span style={{
                         display: "flex", alignItems: "center", cursor: "pointer",
                         justifyContent: "center", color: "white", background: "orangered", fontSize: "smaller", padding: "5px", borderRadius: "5px"
