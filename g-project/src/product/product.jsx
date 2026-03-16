@@ -3,9 +3,10 @@ import lists from "../productlist/list"
 import "./product.css"
 import Cards from "../cards/cards"
 export default function  Product(){
-    let items=["All","Fruits","vegetables","Dairy","SeaFood"]
+    let items=["All","Fruits","Vegetables","Dairy","SeaFood"]
     const[active,setActive]=useState("All")
-    let choice=lists.map((ca , ids)=>{
+    let categoryItem=active==="All"?lists:lists.filter(i=>i.category===active)
+    let choice=categoryItem.slice(0,8).map((ca , ids)=>{
         return(
             <Cards key={ids} value={ca}/>
         )

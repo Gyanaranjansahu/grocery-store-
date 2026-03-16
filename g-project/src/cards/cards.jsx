@@ -23,7 +23,7 @@ export default function Cards({ value }) {
                     }}> <FaPlus /> </span>
                 </div>
                 <div >
-                    <img src={value.Image} alt="" width="90" />
+                    <img loading="preload" src={value.Image} alt="" width="90" />
                 </div>
                 <span>{value.name}</span>
                 <span>{value.price}</span>

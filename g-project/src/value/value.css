@@ -29,7 +29,7 @@ width: 300px;
 }
 .rights{
 }
-@media (max-width:710px) {
+@media (max-width:640px) {
     .values-contain{
     display: flex;
     flex-direction: column;
@@ -42,6 +42,9 @@ width: 300px;
 }
 .main-image{
 display: none;
+}
+.co{
+    margin-top: 75%;
 }
 .lefts{
 width: 100%;
