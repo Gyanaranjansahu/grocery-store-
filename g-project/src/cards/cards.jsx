@@ -2,11 +2,15 @@ import { FaHeart, FaPlus } from "react-icons/fa";
 
 export default function Cards({value}) {
     return(
-       <div style={{gap:"1rem", display:"flex", alignItems:"center", justifyContent:"center", padding:"25px", position:"sticky", zIndex:"-1" }  }>
+       <div style={{gap:"1rem", display:"flex", alignItems:"center", justifyContent:"center", padding:"25px", position:"sticky", zIndex:"-1",
+        boxShadow:"1px 1px 4px rgba(0,0,0,0.1)", borderRadius:"5px", background:"wheat"
+        }  }>
        <div className="se" style={{display:"flex",flexDirection:"column"}}>
-         <div style={{display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+         <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", gap:"4rem" }}>
             <span><FaHeart/></span>
-            <span> <FaPlus/> </span>
+            <span style={{ display:"flex", alignItems:"center",
+                justifyContent:"center", color:"white", background:"orangered", fontSize:"smaller", padding:"5px", borderRadius:"5px"
+            }}> <FaPlus/> </span>
         </div>
         <div >
          <img src={value.Image} alt=""  width="90" />

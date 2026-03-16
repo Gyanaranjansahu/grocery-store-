@@ -15,6 +15,10 @@ import slice from "../assets/slice-cheese.png"
 import tilapia from "../assets/tilapia.png"
 import tofu from "../assets/tofu.png"
 import yogurt from "../assets/yogurt.png"
+
+import broccoli from "../assets/broccoli.png"
+import eggplant from "../assets/eggplant.png"
+import ricotta from "../assets/ricotta-cheese.png"
 let list=[
     {
         id:1 ,      
@@ -103,6 +107,21 @@ let list=[
         Image:yogurt,
         name:"Yogurt",
         price:"$2.00"
+    },
+       {
+        Image: broccoli,
+        name:"Broccoli",
+        price:"$3.00"
+    },
+       {
+        Image:eggplant,
+        name:"Eggplant",
+        price:"$4.00"
+    },
+       {
+        Image:ricotta,
+        name:"Ricotta",
+        price:"$5.00"
     },
     
 ]
