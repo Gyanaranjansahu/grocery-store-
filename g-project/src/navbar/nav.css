@@ -15,7 +15,7 @@ justify-content: center;
 padding: 10px auto;
 position: sticky;
 top: 0;
-
+ z-index: 10000;
 }
 nav{
    width: 1400px;
@@ -27,7 +27,7 @@ nav{
    position: sticky;
 top: 0;
     padding: 0px 4px;
-    z-index: 100;
+    z-index: 10000;
     -webkit-backdrop-filter: blur(20px);
     background-color: white;
 }
