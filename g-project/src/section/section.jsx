@@ -7,7 +7,7 @@ export default function Section() {
     let menu = store.map((val, id) => {
         return (
             <div style={{ border: "1px solid black", display: "flex", flexDirection: "column", height: "240px", alignItems: "center", justifyContent: "center", borderRadius: "10px", border: "none", boxShadow: "5px 5px 10px rgba(0,0,0,0.2)" }}>
-                <div style={{ flexWrap: "wrap", padding: "10px", textAlign: "center", width: "400px" }} ><img src={val.image} loading={preload} width="200" alt="" />
+                <div style={{ flexWrap: "wrap", padding: "20px", textAlign: "center", width: "400px" }} ><img src={val.image} loading={preload} width="200" alt="" />
 
                     <h3>{val.name}</h3>
                     <p>{val.data}</p>
