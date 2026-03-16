@@ -1,0 +1,61 @@
+.discount-container{
+width: 100%;
+display: flex;
+align-items: center;
+padding: 10px;
+height: 45vh;
+justify-content: flex-start;
+    background: rgba(0, 0, 0, 0.1);
+background-position:right;
+background-size: contain;
+background-repeat: no-repeat;
+background-image: url("../assets/fruit.png");
+}
+.percent{
+font-size: 70px;
+font-weight: bolder;
+rotate: -90deg;
+display: flex;
+align-items: center;
+justify-content: center;
+align-self: center;
+color: orangered;
+
+}
+
+.get{
+    padding: 7px;
+    background:linear-gradient(45deg,orangered,orange);
+    border: none;
+    border-radius: 3px;
+    margin: 10px 0px;
+    line-height:normal;
+    font-size: 0.8rem;
+    color: white;
+     cursor: pointer;
+}
+.bif{
+    font-size: 40px;
+}
+@media (max-width:640px) {
+    .discount-container{
+        margin-top: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .percent{
+font-size: 50px;
+font-weight: bolder;
+display: flex;
+align-items: center;
+justify-content: center;
+align-self: flex-start;
+color: orangered;
+rotate: 0deg;
+}
+.order{
+    align-self: flex-start;
+}
+
+}

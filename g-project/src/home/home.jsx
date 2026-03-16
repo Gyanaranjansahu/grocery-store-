@@ -1,3 +1,4 @@
+import Discount from "../discount/discount.jsx";
 import Hero from "../hero/hero.jsx";
 import Nav from "../navbar/nav.jsx";
 import Product from "../product/product.jsx";
@@ -12,6 +13,7 @@ export default function Home(params) {
         <Section/>
         <Value/>
         <Product/>
+        <Discount/>
         </>
     )
 };
