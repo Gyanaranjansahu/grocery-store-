@@ -28,7 +28,7 @@ export default function Top() {
                 {/* flex center column */}
                 <div  style={{ display: "flex", alignItems: "center", justifyContent: "center", border:"1px solid white", padding:"10px", alignSelf:"flex-start", margin:"5px", width:"110%"}}>
                     {/* flex center */}
-                    <div className="im"  style={{ display: "flex", alignItems: "center", justifyContent: "center", height:"40px", width:"40px", alignSelf:"flex-start", border:"3px solid brown", padding:"2px", marginRight:"5px", borderRadius:"50%"}}>
+                    <div className="im"  style={{ display: "flex", alignItems: "center", justifyContent: "center", height:"50px", width:"50px", alignSelf:"flex-start", border:"3px solid brown", padding:"2px", marginRight:"5px", borderRadius:"50%"}}>
                         <img src={i.image} alt="" width="30" style={{height:"100%", width:"100%", borderRadius:"50%"}}/>
                     </div>
                     <div  style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
@@ -54,7 +54,7 @@ export default function Top() {
     })
     return (
         <section className="rating">
-            <div style={{ margin: "10px" }} > <h4 id="orange"> <span style={{ color: "orangered" }}>Customers</span>Saying</h4></div>
+            <div style={{ margin: "10px" }} > <h4 id="orange"> <span style={{ color: "orangered" }}>Customers</span> Saying</h4></div>
             <div className="ic" >
                 <button className="arrow" onClick={left} ><FaArrowLeft /></button>
                 <button className="arrow" onClick={right} ><FaArrowRight /></button>
