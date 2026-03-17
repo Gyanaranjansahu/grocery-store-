@@ -51,6 +51,6 @@ gap: 10px;
     }
     .reviews{
         height: 80vh;
-        width: 120vh;
+        width: 100%;
     }
 }
