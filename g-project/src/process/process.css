@@ -1,5 +1,6 @@
 #set{
     width: 100%;
+    scroll-behavior: smooth;
     height: 75vh;
     display: flex;
     align-items: center;

@@ -3,6 +3,7 @@ import first from "../assets/fruits-and-veggies.png"
 import second from "../assets/dairy-and-eggs.png"
 import third from "../assets/meat-and-seafood.png"
 import { preload } from "react-dom"
+import { Link } from "react-router-dom"
 export default function Section() {
     let menu = store.map((val, id) => {
         return (
@@ -11,7 +12,9 @@ export default function Section() {
 
                     <h3>{val.name}</h3>
                     <p>{val.data}</p>
-                    <button id="btn" style={{ left: "", marginTop: "5px" }}>See All</button>
+                    <button id="btn" style={{ left: "", marginTop: "5px" }}>
+                        <Link to={val.path} style={{textDecoration:"none", color:"white"}}>See All</Link>
+                    </button>
                 </div>
 
             </div>
@@ -30,6 +33,7 @@ export default function Section() {
 }
 let store = [
     {
+        path:"/fruits",
         "id": 1,
         image: first,
         "name": "Fruits & Veggies",
@@ -37,6 +41,7 @@ let store = [
 
     },
     {
+        path:"/dairy",
         "id": 2,
         "image": second,
         "name": "Dairy & Eggs",
@@ -44,6 +49,7 @@ let store = [
 
     },
     {
+        path:"/meat",
         "id": 3,
         "image": third,
         "name": "Meat & SeaFood",

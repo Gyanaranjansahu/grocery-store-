@@ -1,6 +1,7 @@
 .center-image{
 height: 300px;
 width: 300px;
+scroll-behavior: smooth;
 }
 .main-image{
     display: flex;

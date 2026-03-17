@@ -5,6 +5,7 @@
     flex-direction: column;
     height: 80vh;
     width: 100%;
+    scroll-behavior: smooth;
 }
 .ic{
 padding: 10px;

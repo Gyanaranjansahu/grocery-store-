@@ -1,0 +1,14 @@
+.banners{
+width: 100%;
+height: 50vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-image: url("../assets/fruits-banner.jpg");
+background-size: cover;
+background-position: center;
+}
+.fo{
+    margin-top: 10%;
+}
