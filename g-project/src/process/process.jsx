@@ -16,7 +16,7 @@ let items=about.map((val,id)=>{
             <div  style={{display:"flex", alignItems:"center", justifyContent:"center",  padding:"10px"}}>
                 <span style={{padding:"10px", background:"orangered", fontSize:"15px", borderRadius:"50%", margin:"0px 5px" ,display:"flex", alignItems:"center", justifyContent:"center", color:"white"}}>{val.icon}</span>
                <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", textAlign:"center"}}>
-                 <span style={{fontWeight:"bold"}}>{val.title}</span>
+                 <span style={{fontWeight:"bold", alignSelf:"center"}}>{val.title}</span>
                 <span style={{fontSize:"small"}}>{val.about}</span>
                 </div>
             </div>
@@ -25,7 +25,7 @@ let items=about.map((val,id)=>{
 })
     return(
         <section id="set">
-            <div id="head"> <h2 > <span style={{ color: "orangered"  }}>Our </span>Process</h2></div>
+            <div id="head"> <h2  style={{fontSize:"30px"}}> <span style={{ color: "orangered"  }}>Our </span>Process</h2></div>
             <div className="process">
                 {items}
             </div>

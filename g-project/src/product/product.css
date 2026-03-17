@@ -55,6 +55,6 @@ color: white;
 @media (max-width:720px) {
     .fours{
         height: 100vh;
-        margin-top: 150%;
+        margin-top: 130%;
     }
 }
