@@ -9,6 +9,17 @@ background-size: cover;
 background-position: center;
 margin-top: 5%;
 }
+.red{
+    color: red;
+}
+.remove{
+    color: white;
+}
 .fo{
     margin-top: 10%;
+}
+@media (max-width:720px) {
+    .banerss{
+        width: 100%;
+    }
 }
