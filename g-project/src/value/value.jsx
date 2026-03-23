@@ -5,7 +5,7 @@ import "./value.css"
 export default function Value() {
     let data=collection.slice(0,2).map((val,id)=>{
         return(
-           <div className="ma" style={{margin:"30px 0px", width:"290px", padding:'0px', flexDirection:"right" ,gap:"2rem"}}>
+           <div key={id} className="ma" style={{margin:"30px 0px", width:"290px", padding:'0px', flexDirection:"right" ,gap:"2rem"}}>
             <h2>{val.name}</h2>
             <div className="same" style={{  display:"flex", alignItems:"center", justifyContent:"center", margin:"20px", gap:"1rem", border:"none"}}>
                 <span>{val.title}</span>
@@ -16,7 +16,7 @@ export default function Value() {
     })
      let data2=collection.slice(2).map((val,id)=>{
         return(
-           <div className="ma" style={{margin:"30px 0px", width:"290px", padding:'0px', flexDirection:"right"}}>
+           <div key={id} className="ma" style={{margin:"30px 0px", width:"290px", padding:'0px', flexDirection:"right"}}>
             <h2>{val.name}</h2>
             <div className="same" style={{display:"flex", alignItems:"center", justifyContent:"center",margin:"20px"}}>
                 <span>{val.title}</span>

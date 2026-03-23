@@ -11,3 +11,8 @@ background-position: center;
 .fo{
     margin-top: 10%;
 }
+@media (max-width:720px) {
+    .d{
+        margin-top: 200px;
+    }
+}

@@ -4,8 +4,9 @@ import { Route, Routes } from "react-router-dom";
 import Fruits from "./fruits/fruits.jsx";
 import Dairy from "./dairy/dairy.jsx";
 import Seafood from "./seafood/seafood.jsx";
-
 export default function App(params) {
+
+      
   return(
 <>
 <Routes>

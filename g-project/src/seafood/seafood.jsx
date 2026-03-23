@@ -24,7 +24,7 @@ let d=i.map((item ,id)=>{
               <div className="banner" >
                
            </div>
-            <div style={{background:"white", display:"flex", justifyContent:"center", margin:"10px", gap:"1rem", flexWrap:"wrap"}} >
+            <div className="d" style={{background:"white", display:"flex", justifyContent:"center", margin:"10px", gap:"1rem", flexWrap:"wrap"}} >
             {d}
            </div>
             <div className="fo">

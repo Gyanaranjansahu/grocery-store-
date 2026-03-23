@@ -1,7 +1,8 @@
-import { useState } from "react"
+import {  useState } from "react"
 import lists from "../productlist/list"
 import "./product.css"
 import Cards from "../cards/cards"
+import Nav from "../navbar/nav"
 export default function  Product(){
     let items=["All","Fruits","Vegetables","Dairy","SeaFood"]
     const[active,setActive]=useState("All")

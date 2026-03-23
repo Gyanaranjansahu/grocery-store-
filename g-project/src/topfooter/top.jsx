@@ -19,9 +19,9 @@ export default function Top() {
             behavior: "smooth",
         })
     }
-    let collect = reviews.map((i) => {
+    let collect = reviews.map((i,id) => {
         return (
-            <div style={{ boxShadow:"2px 2px 5px rgba(0,0,0,0.3)",display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", 
+            <div key={id} style={{  boxShadow:"2px 2px 5px rgba(0,0,0,0.3)",display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", 
 
                 border:"1px solid white", height:"26vh", padding:"40px", width:"65%"
             }}>
@@ -37,8 +37,8 @@ export default function Top() {
                         {/* big font  */}
                         <p>{i.role}</p>
                         <p>{
-                            Array(i.rating).fill().map((val) =>
-                                <span key={val}>⭐</span>
+                            Array(i.rating).fill().map((val,id) =>
+                                <span key={id}>⭐</span>
                             )
                         }</p>
                     </div>

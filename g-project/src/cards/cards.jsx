@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import { FaHeart, FaPlus } from "react-icons/fa";
 import "./card.css"
+
 export default function Cards({ value }) {
     const [change, setChange] = useState(false)
+    let [count, setCount] = useState(0)
     return (
+
         <div style={{
             gap: "1rem", display: "flex", alignItems: "center", justifyContent: "center", padding: "25px", zIndex: "0",
             boxShadow: "1px 1px 4px rgba(0,0,0,0.1)", borderRadius: "5px", background: "wheat"
@@ -16,7 +19,7 @@ export default function Cards({ value }) {
                 }}>
                     <span style={{
                         display: "flex", alignItems: "center", justifyContent: "center", padding: "4px",
-                    }} onClick={() => setChange(!change)} className={change ? "effect" : "remove"}><FaHeart /></span>
+                    }} onClick={() => setChange(!change)} className={change ? "effect" : "remove"}   ><FaHeart /></span>
                     <span style={{
                         display: "flex", alignItems: "center", cursor: "pointer",
                         justifyContent: "center", color: "white", background: "orangered", fontSize: "smaller", padding: "5px", borderRadius: "5px"

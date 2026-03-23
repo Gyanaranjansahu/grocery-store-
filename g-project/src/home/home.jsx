@@ -1,3 +1,4 @@
+import { useNavigation } from "react-router-dom";
 import Discount from "../discount/discount.jsx";
 import Footer from "../footer/footer.jsx";
 import Hero from "../hero/hero.jsx";
@@ -8,7 +9,8 @@ import Section from "../section/section.jsx";
 import Top from "../topfooter/top.jsx";
 import Value from "../value/value.jsx";
 
-export default function Home(params) {
+export default function Home() {
+   
     return(
        <>
         <Nav/>
