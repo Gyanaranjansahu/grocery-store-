@@ -1,10 +1,15 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { FaHeart, FaPlus } from "react-icons/fa";
 import "./card.css"
+import { User } from "../App";
 
 export default function Cards({ value }) {
     const [change, setChange] = useState(false)
     let [count, setCount] = useState(0)
+    let{add,setAdd}=useContext(User)
+    function adding(){
+        setAdd(add+1)
+    }
     return (
 
         <div style={{
@@ -23,7 +28,7 @@ export default function Cards({ value }) {
                     <span style={{
                         display: "flex", alignItems: "center", cursor: "pointer",
                         justifyContent: "center", color: "white", background: "orangered", fontSize: "smaller", padding: "5px", borderRadius: "5px"
-                    }}> <FaPlus /> </span>
+                    }} onClick={adding}> <FaPlus /> </span>
                 </div>
                 <div >
                     <img loading="preload" src={value.Image} alt="" width="90" />

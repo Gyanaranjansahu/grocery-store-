@@ -114,6 +114,16 @@ cursor: pointer;
 #humberger{
 display: none;
 }
+#bag{
+    position: relative;
+    right: 16px;
+    top: -10px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    background-color: red;
+
+}
 @media (max-width:670px) {
     #humberger{
 display: block;

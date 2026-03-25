@@ -4,18 +4,24 @@ import { Route, Routes } from "react-router-dom";
 import Fruits from "./fruits/fruits.jsx";
 import Dairy from "./dairy/dairy.jsx";
 import Seafood from "./seafood/seafood.jsx";
-export default function App(params) {
-
-      
+import { createContext, useState } from "react";
+let User = createContext()
+export default function App() {
+  const [add, setAdd] = useState(0)
   return(
-<>
-<Routes>
-  <Route path="/" element={<Home/>}/>
-  <Route path="/fruits" element={<Fruits/>}/>
-  <Route path="/dairy" element={<Dairy/>}/>
-  <Route path="/meat" element={<Seafood/>}/>
-</Routes>
+    <>
+
+   <User.Provider value={{add,setAdd}}>
+     <Routes>
+        <Route path="/" element={<Home />} />
+      <Route path="/fruits" element={<Fruits />} />
+      <Route path="/dairy" element={<Dairy />} />
+      <Route path="/meat" element={<Seafood />} />
+    </Routes>
+   </User.Provider>
 
 </>
+
   )
 };
+export { User }
