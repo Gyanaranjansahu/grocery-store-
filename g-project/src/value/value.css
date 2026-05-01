@@ -25,13 +25,8 @@ scroll-behavior: smooth;
    
    
 }
-.values-contain{
-    
-}
-.lefts{
-}
-.rights{
-}
+
+
 @media (max-width:640px) {
     .values-contain{
     display: flex;
