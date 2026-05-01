@@ -1,14 +1,15 @@
 import { createContext, useContext, useState } from "react";
 import { FaHeart, FaPlus } from "react-icons/fa";
 import "./card.css"
-import { User } from "../App";
+import { User } from "../contex/context";
+
 
 export default function Cards({ value }) {
     const [change, setChange] = useState(false)
-    let [count, setCount] = useState(0)
-    let{add,setAdd}=useContext(User)
-    function adding(){
-        setAdd(add+1)
+    let { count, setCount } = useContext(User)
+
+    function adding() {
+        setCount(count + 1)
     }
     return (
 
@@ -42,4 +43,4 @@ export default function Cards({ value }) {
             </div>
         </div>
     )
-};
+}

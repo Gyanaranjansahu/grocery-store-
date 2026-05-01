@@ -1,7 +1,15 @@
+import { useContext } from "react"
 import "./hero.css"
+import { User } from "../contex/context"
 export default function Hero() {
+    let{name,setName}=useContext(User)
     return(
         <section>
+            <div className="user" 
+            style={{width:"100%", display:"flex", justifyContent:"flex-start"}}
+            >
+               
+            </div>
             <div id="content">
                 <div className="text">
                     <span id="best">Export Best Quality..</span>

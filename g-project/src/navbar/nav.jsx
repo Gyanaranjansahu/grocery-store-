@@ -4,14 +4,14 @@ import { FaHeart } from "react-icons/fa";
 import { IoBagHandle } from "react-icons/io5";
   import { GiHamburgerMenu } from "react-icons/gi";
 import "./nav.css"
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import Hero from "../hero/hero";
-import { User } from "../App";
+import { User } from "../contex/context";
 
 export default function Nav() {
 const[data,setData]=useState(false)
-let{add,setAdd}=useContext(User)
+const{count,setCount}=useContext(User)
 
 
     return (
@@ -31,7 +31,10 @@ let{add,setAdd}=useContext(User)
                         <li><a href="/about">About Us </a></li>
                         <li><a href="/process">Process </a></li>
                         <li><a href="/contact"> Contact Us</a></li>
-                    </ul>
+                        <li>  <div className="searchbar">
+                        <input className="input" type="text" name="text" id="text" placeholder="Search.." />
+                       <p id="b"> <IoSearchOutline/></p></div></li>
+                    </ul>                   
                 </div>
                 {/* searchbar */}
                 <div className="third">
@@ -43,7 +46,7 @@ let{add,setAdd}=useContext(User)
                     <div className="icons">
                         <span> <FaHeart /> </span>
                         <span> <IoBagHandle /> </span>
-                        <p id="bag" style={{height:"15px", width:"15px", display:"flex", alignItems:"center", justifyContent:"center", borderRadius:"50%", fontSize:"10px"  }} >{add}</p>
+                        <p id="bag" style={{height:"15px", width:"15px", display:"flex", alignItems:"center", justifyContent:"center", borderRadius:"50%", fontSize:"10px"  }} >{count}</p>
                     </div>
                     {/* humberger */}
                     <span className="h"  onClick={()=>setData(!data)} style={{color:"black", cursor:"pointer"}} id="humberger" >{data?<FaTimes/>:<GiHamburgerMenu/>}</span>

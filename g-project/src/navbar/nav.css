@@ -76,9 +76,48 @@ border: none;
 cursor: pointer;
     border: 2px solid orange;
 }
+/* new one for navbar */
+.searchbar{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 6px;
+border-radius: 20px;
+text-align: center;
+border: none;
+cursor: pointer;
+    border: 2px solid orange;
+    display: none;
+}
+
+
 .search:hover{
     
     border: 2px solid orangered;
+}
+/* new */
+.searchbar:hover{
+    
+    border: 2px solid orangered;
+}
+/* new  */
+.searchbar input{
+    border: none;
+    outline: none;
+}
+/* new for navbar */
+#b{
+
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(100deg,red,orange);
+    font-size: large;
+    font-weight: bold;
+    border: none;
 }
 .search input{
     border: none;
@@ -133,6 +172,7 @@ align-items: center;
 justify-content: center;
 }
 ul{
+    
     position: absolute;
     top: 60px;
     right: -90px;
@@ -155,9 +195,16 @@ ul{
      -webkit-backdrop-filter: blur(2rem);
   
 }
-li a{
+/* li a{
+    border: 1px solid black;
     color: white;
     font-size: 1rem;
+} */
+li{
+     
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 .multiple{
     display: none;
@@ -169,6 +216,25 @@ li a{
     align-items: center;
     justify-content: center;
 }
+/*  */
+
+/*  */
+
+/*  */
+#b{
+    font-size: x-small;
+}
+/*  */
+.searchbar>input{ 
+     width: 100px;
+    font-size: xx-small;
+    background: transparent;
+}
+/*  */
+#b{
+    font-size: x-small;
+}
+/* new  */
 .search:hover{
     font-size: larger;
 }
@@ -225,4 +291,15 @@ nav{
 .shadow{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
+.search{
+    display: none;
+}
+.searchbar{
+    display: flex;
+
+}
+/* .searchbar{
+    display:block;
+    padding: 10px;
+} */
 }

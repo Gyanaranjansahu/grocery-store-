@@ -6,6 +6,8 @@
     height: 80vh;
     width: 100%;
     scroll-behavior: smooth;
+        
+        overflow: hidden;
 }
 .ic{
 padding: 10px;
@@ -36,6 +38,7 @@ gap: 10px;
     display: none;
 }
 .box{
+        border: 1px solid black;
     height: 150px;
     min-width: 250px;
     background-color: blue;
