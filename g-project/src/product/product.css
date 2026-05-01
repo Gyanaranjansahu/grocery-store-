@@ -93,14 +93,9 @@
   
 }
 .card-section{
-    display: flex;
-    align-self: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
     gap: 1rem;
     width: 100%;
-    margin-top: 24px;
    border: 1px solid black;
    background-color: blue;
     height: auto;
