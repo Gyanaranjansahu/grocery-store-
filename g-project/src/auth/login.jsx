@@ -3,6 +3,7 @@ import "./login.css"
 import { User } from "../contex/context"
 import { useNavigate } from "react-router-dom"
 import {Toaster,toast} from "react-hot-toast"
+import { Link } from "react-router-dom"
 export default function Login(params) {
     let {name,setName,email,setEmail,password,setPassword,usercreate,person,data}=useContext(User)
     let verify=JSON.parse(localStorage.getItem("user"))
@@ -38,7 +39,7 @@ toast.success('Login successful!')
                     <input type="password" placeholder="Password" style={{ padding: "10px", margin: "5px", borderRadius: "5px", border: "1px solid gray" }} onChange={(e)=>setPassword(e.target.value)} value={password} name="password" required/>
                     <button style={{ padding: "10px", margin: "5px", borderRadius: "5px", border: "1px solid gray", backgroundColor: "blue", color: "white", cursor: "pointer" } } type="submit">Login</button>
                 </form>
-                <p style={{ color: "white", marginTop: "10px" }}>Don't have an account? <a href="/signup" style={{ color: "blue" }}>Sign Up</a></p>
+                <p style={{ color: "white", marginTop: "10px" }}>Don't have an account? <Link to="/signup" style={{ color: "blue" }}>Sign Up</Link></p>
             </div>
             <Toaster
   position="top-right"
