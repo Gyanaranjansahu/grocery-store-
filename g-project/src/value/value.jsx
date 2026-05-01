@@ -27,7 +27,7 @@ export default function Value() {
     })
     return(
         <section className="co" style={{ display:"flex", flexDirection:"column" }} >
-            <div style={{margin:"10px"}} > <h4 id="orange"> <span style={{ color: "orangered" }}>Our </span>Values</h4></div>
+            <div  > <h4 id="orange"> <span style={{ color: "orangered" }}>Our </span>Values</h4></div>
             <div className="values-contain"  style={{display:"flex", alignItems:"center", justifyContent:"center", gap:"2rem"}}>
                 <div className="lefts" style={{ padding:"10px", gap:"1rem"}}>
                   {data}
