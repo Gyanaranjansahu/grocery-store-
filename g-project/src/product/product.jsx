@@ -27,7 +27,7 @@ export default function  Product(){
                         })
                     }
                  </div>
-                 <div className="card-section"  >
+                 <div className="card-section">
                     {choice}
                  </div>
                 </div>

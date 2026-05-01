@@ -99,5 +99,7 @@
    border: 1px solid black;
    background-color: blue;
     height: auto;
+    display: flex;
+    justify-content: flex-start;
 }
 }
