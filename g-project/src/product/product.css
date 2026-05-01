@@ -94,9 +94,6 @@
 .card-section{
     
     gap: 1rem;
-    width: 100%;
-   border: 1px solid black;
-   background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
