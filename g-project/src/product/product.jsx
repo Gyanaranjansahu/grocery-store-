@@ -13,7 +13,7 @@ export default function Product() {
         )
     })
     return (
-        <section className="fours" style={{ display: "flex" }}>
+        <section className="fours" >
             <div className="p">
                 <div style={{ margin: "10px" }} > <h4 id="orange"> <span style={{ color: "orangered" }}>Our </span>Products</h4></div>
                 <div className="product-list" >
@@ -27,7 +27,7 @@ export default function Product() {
                         })
                     }
                 </div>
-                <div className="card-section">
+                <div className="card-section" >
                     {choice}
                  </div>
             </div>

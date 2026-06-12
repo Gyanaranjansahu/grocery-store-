@@ -8,6 +8,7 @@ function Context({children}){
     const[password,setPassword]=useState("")
     const[count,setCount]=useState(0)
     const[person,setPerson]=useState(null)
+    const[cart,setCart]=useState([])
 
     function usercreate(){
         let userdata={
@@ -20,7 +21,7 @@ function Context({children}){
     }
      
     return(
-        <User.Provider value={{ name, setName, email, setEmail, password, setPassword, count, setCount ,usercreate,person}}>
+        <User.Provider value={{ name, setName, email, setEmail, password, setPassword, count, setCount ,usercreate,person,cart,setCart}}>
             {children}
         </User.Provider>
     )
