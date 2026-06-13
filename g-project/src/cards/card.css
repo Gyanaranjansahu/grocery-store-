@@ -4,3 +4,13 @@
 .remove{
     color: white;
 }
+#cards{
+    width: 200px;
+}
+
+
+@media (max-width:720px) {
+    #card{
+        width: 160px;
+    }
+}

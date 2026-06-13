@@ -21,8 +21,8 @@ export default function Cards({ value }) {
         <div style={{
             gap: "1rem", display: "flex", alignItems: "center", justifyContent: "center", padding: "25px", zIndex: "0",
             boxShadow: "1px 1px 4px rgba(0,0,0,0.1)", borderRadius: "5px", background: "wheat",
-            width:"200px"
-        }}>
+           
+        }} id="cards">
             <div className="se"
                 style={{ display: "flex", flexDirection: "column" }}
             >
